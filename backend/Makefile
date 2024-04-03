@@ -91,6 +91,9 @@ dev: build-plugin build-python run
 godev:
 	DISABLED_REMOTE_PLUGINS=true make build-plugin run
 
+build-plugin-debug:
+	@sh scripts/compile-plugins.sh -gcflags='all=-N -l'
+
 debug: build-plugin-debug
 	dlv debug server/main.go
 

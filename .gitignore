@@ -128,7 +128,6 @@ local.js
 # Editors
 .idea
 *.iml
-.vscode
 /.nova
 *.sublime*
 
